@@ -48,9 +48,9 @@
   "author": "Md. Moniruzzaman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/geniusmonir/react-native-android-gm-utils/issues"
+    "url": "https://github.com/geniusmonir/prebooked/issues"
   },
-  "homepage": "https://github.com/geniusmonir/react-native-android-gm-utils#readme",
+  "homepage": "https://github.com/geniusmonir/prebooked#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -64,6 +64,9 @@
     },
     "github": {
       "release": true
+    },
+    "hooks": {
+      "before:init": "echo 'Running release process...'"
     }
   },
   "dependencies": {
@@ -107,6 +110,7 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.4.1",
+    "release-it": "^19.0.1",
     "rollup": "^4.34.8",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
