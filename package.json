@@ -1,0 +1,118 @@
+{
+  "name": "prebooked",
+  "version": "1.0.0",
+  "description": "Prebooked is a powerful booking form library for React, Next.js, and CMS platforms like WordPress and Wix. It connect to the Fully Booked mobile app to manage your bookings with advanced features like notifications, scheduling, and customer management.",
+  "private": false,
+  "main": "dist/es/prebooked.es.js",
+  "module": "dist/es/prebooked.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/styles.css --minify",
+    "build:es": "tsc --declaration --emitDeclarationOnly && vite build",
+    "build:umd": "vite build --config vite.umd.config.ts && yarn run copy:files",
+    "copy:files": "cp src/index.d.ts dist/index.d.ts",
+    "build": "yarn run build:css && yarn run build:es && yarn run build:umd",
+    "release": "release-it"
+  },
+  "keywords": [
+    "fully booked",
+    "fully-booked",
+    "fully booked library",
+    "fully booked widget",
+    "prebooked",
+    "pre-booked",
+    "prebooked widget",
+    "prebooked library",
+    "prebooked-react",
+    "prebooked wordpress",
+    "prebooked wix",
+    "prebooked webflow",
+    "prebooked elementor",
+    "booking form",
+    "booking form library",
+    "booking form widget",
+    "library for booking form",
+    "react booking form",
+    "react booking form library",
+    "react booking form component",
+    "react booking form component library",
+    "react booking form component library for wordpress"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geniusmonir/prebooked"
+  },
+  "author": "Md. Moniruzzaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geniusmonir/react-native-android-gm-utils/issues"
+  },
+  "homepage": "https://github.com/geniusmonir/react-native-android-gm-utils#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    }
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.7",
+    "@mui/material": "^6.4.5",
+    "@mui/x-date-pickers": "^7.27.1",
+    "clsx": "^2.1.1",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.4.7",
+    "graphql": "^16.7.1",
+    "moment": "^2.30.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-autocomplete": "^2.7.4",
+    "yup": "^1.6.1"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.7.17",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.7",
+    "@mui/material": "^6.4.5",
+    "@mui/x-date-pickers": "^7.27.1",
+    "clsx": "^2.1.1",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.4.7",
+    "graphql": "^16.7.1",
+    "moment": "^2.30.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-autocomplete": "^2.7.4",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.4.1",
+    "rollup": "^4.34.8",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tailwindcss": "3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.3.3",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
+  }
+}
