@@ -1,6 +1,6 @@
 {
   "name": "prebooked",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Prebooked is a powerful booking form library for React, Next.js, and CMS platforms like WordPress and Wix. It connect to the Fully Booked mobile app to manage your bookings with advanced features like notifications, scheduling, and customer management.",
   "private": false,
   "main": "dist/es/prebooked.es.js",
@@ -43,7 +43,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geniusmonir/prebooked"
+    "url": "git+https://github.com/geniusmonir/prebooked.git"
   },
   "author": "Md. Moniruzzaman",
   "license": "ISC",
