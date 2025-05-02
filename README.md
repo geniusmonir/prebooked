@@ -120,22 +120,22 @@ export interface PrebookedProps {
 
 #### 🎨 Default Color Palette
 
-| Color Name                  | Field ID                   |                                              Preview                                              | Hex Code  |
-| --------------------------- | -------------------------- | :-----------------------------------------------------------------------------------------------: | --------- |
-| Primary Color               | `primaryColor`             | <div style="width: 20px; height: 20px; background-color: #47C56C; border: 1px solid #000;"></div> | `#47C56C` |
-| Primary Color Light         | `primaryColorLight`        | <div style="width: 20px; height: 20px; background-color: #BFE7D0; border: 1px solid #000;"></div> | `#BFE7D0` |
-| Secondary Color             | `secondaryColor`           | <div style="width: 20px; height: 20px; background-color: #002661; border: 1px solid #000;"></div> | `#002661` |
-| Secondary Color Light       | `secondaryColorLight`      | <div style="width: 20px; height: 20px; background-color: #AAB7CD; border: 1px solid #000;"></div> | `#AAB7CD` |
-| Warning Color               | `warningColor`             | <div style="width: 20px; height: 20px; background-color: #BE3927; border: 1px solid #000;"></div> | `#BE3927` |
-| Gray Color                  | `grayColor`                | <div style="width: 20px; height: 20px; background-color: #747474; border: 1px solid #000;"></div> | `#747474` |
-| Font Color                  | `fontColor`                | <div style="width: 20px; height: 20px; background-color: #324A59; border: 1px solid #000;"></div> | `#324A59` |
-| Light Background Color      | `lightBgColor`             | <div style="width: 20px; height: 20px; background-color: #D3E4FF; border: 1px solid #000;"></div> | `#D3E4FF` |
-| Lighter Background Color    | `lighterBgColor`           | <div style="width: 20px; height: 20px; background-color: #F3F8FF; border: 1px solid #000;"></div> | `#F3F8FF` |
-| Global Background Color     | `globalBgColor`            | <div style="width: 20px; height: 20px; background-color: #FFFFFF; border: 1px solid #000;"></div> | `#FFFFFF` |
-| Border Color                | `borderColor`              | <div style="width: 20px; height: 20px; background-color: #C4C4C4; border: 1px solid #000;"></div> | `#C4C4C4` |
-| Scrollbar Track Color       | `scrollbarTrackColor`      | <div style="width: 20px; height: 20px; background-color: #9cbef6; border: 1px solid #000;"></div> | `#9cbef6` |
-| Scrollbar Thumb Color       | `scrollbarThumbColor`      | <div style="width: 20px; height: 20px; background-color: #598ad7; border: 1px solid #000;"></div> | `#598ad7` |
-| Scrollbar Thumb Hover Color | `scrollbarThumbHoverColor` | <div style="width: 20px; height: 20px; background-color: #002661; border: 1px solid #000;"></div> | `#002661` |
+| Color Name                  | Field ID                   | Preview                                                                                        | Hex Code  |
+| --------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------- | --------- |
+| Primary Color               | `primaryColor`             | ![Color](https://img.shields.io/badge/-%2347C56C?style=flat&labelColor=47C56C&logoColor=white) | `#47C56C` |
+| Primary Color Light         | `primaryColorLight`        | ![Color](https://img.shields.io/badge/-%23BFE7D0?style=flat&labelColor=BFE7D0&logoColor=white) | `#BFE7D0` |
+| Secondary Color             | `secondaryColor`           | ![Color](https://img.shields.io/badge/-%23002661?style=flat&labelColor=002661&logoColor=white) | `#002661` |
+| Secondary Color Light       | `secondaryColorLight`      | ![Color](https://img.shields.io/badge/-%23AAB7CD?style=flat&labelColor=AAB7CD&logoColor=white) | `#AAB7CD` |
+| Warning Color               | `warningColor`             | ![Color](https://img.shields.io/badge/-%23BE3927?style=flat&labelColor=BE3927&logoColor=white) | `#BE3927` |
+| Gray Color                  | `grayColor`                | ![Color](https://img.shields.io/badge/-%23747474?style=flat&labelColor=747474&logoColor=white) | `#747474` |
+| Font Color                  | `fontColor`                | ![Color](https://img.shields.io/badge/-%23324A59?style=flat&labelColor=324A59&logoColor=white) | `#324A59` |
+| Light Background Color      | `lightBgColor`             | ![Color](https://img.shields.io/badge/-%23D3E4FF?style=flat&labelColor=D3E4FF&logoColor=white) | `#D3E4FF` |
+| Lighter Background Color    | `lighterBgColor`           | ![Color](https://img.shields.io/badge/-%23F3F8FF?style=flat&labelColor=F3F8FF&logoColor=black) | `#F3F8FF` |
+| Global Background Color     | `globalBgColor`            | ![Color](https://img.shields.io/badge/-%23FFFFFF?style=flat&labelColor=FFFFFF&logoColor=black) | `#FFFFFF` |
+| Border Color                | `borderColor`              | ![Color](https://img.shields.io/badge/-%23C4C4C4?style=flat&labelColor=C4C4C4&logoColor=black) | `#C4C4C4` |
+| Scrollbar Track Color       | `scrollbarTrackColor`      | ![Color](https://img.shields.io/badge/-%239CBEF6?style=flat&labelColor=9CBEF6&logoColor=white) | `#9CBEF6` |
+| Scrollbar Thumb Color       | `scrollbarThumbColor`      | ![Color](https://img.shields.io/badge/-%23598AD7?style=flat&labelColor=598AD7&logoColor=white) | `#598AD7` |
+| Scrollbar Thumb Hover Color | `scrollbarThumbHoverColor` | ![Color](https://img.shields.io/badge/-%23002661?style=flat&labelColor=002661&logoColor=white) | `#002661` |
 
 > **Note:** This widget is developed using react and tailwind. All the styles and fonts are included already. If you want to change the font name then you must have to include that font at the top of `index.css` of your project. The font name must follow the tailwind convensions. For example, `DM Sans` should be written as `DM_Sans`. The way tailwind accept custom font name `font-['DM_Sans']`.
 
