@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co.com/TM5FMw7W/Prebooked150.png" alt="Prebooked Logo">
+  <img src="http://api.fully-booked.uk/assets/images/prebooked.png" alt="Prebooked Logo">
 </p>
 
 ---
@@ -39,7 +39,7 @@ You can seamlessly integrate it into any platform, CMS, or custom website — no
 
 ### 📱 Fully Booked Mobile APP
 
-To use the Prebooked widget you must have to be a minibus or coach operator. You have to install our Mobile App available on both [iOS](https://apps.apple.com/gb/app/fully-booked/id6468971635) and [Android](https://play.google.com/store/apps/details?id=uk.fullydashbooked.mobileapp&hl=en) stores. Click the link and create profile with the given on screen instruction.
+To use the Prebooked widget you have to be a minibus or coach operator. You have to install our Mobile App available on both [iOS](https://apps.apple.com/gb/app/fully-booked/id6468971635) and [Android](https://play.google.com/store/apps/details?id=uk.fullydashbooked.mobileapp&hl=en) stores. Click the link and create profile with the given on screen instruction.
 
 #### ⬇️ 1. Using npm or yarn for React and NextJS
 
@@ -160,7 +160,7 @@ Here are the steps needs to make Prebooked works on your WordPress or Elementor 
 ```html
 <div id="prebooked_widget"></div>
 
-<script src="https://unpkg.com/prebooked@1.0.0/dist/umd/prebooked.umd.js
+<script src="https://unpkg.com/prebooked@1.0.3/dist/umd/prebooked.umd.js
 "></script>
 <script>
   Prebooked.renderWidget('prebooked_widget', {
