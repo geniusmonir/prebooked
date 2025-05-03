@@ -160,7 +160,7 @@ Here are the steps needs to make Prebooked works on your WordPress or Elementor 
 ```html
 <div id="prebooked_widget"></div>
 
-<script src="https://unpkg.com/prebooked@1.0.3/dist/umd/prebooked.umd.js
+<script src="https://unpkg.com/prebooked@1.0.4/dist/umd/prebooked.umd.js
 "></script>
 <script>
   Prebooked.renderWidget('prebooked_widget', {

@@ -6,14 +6,14 @@ import Ft, { useState as z, createContext as Cn, useContext as xn, useRef as jt,
 import { useFormik as zr } from "formik";
 import * as Q from "yup";
 import { AnimatePresence as qt, motion as we } from "framer-motion";
-import { TextField as kn, Button as Tn, FormControl as An, Select as $n, MenuItem as En, FormControlLabel as Gr, Checkbox as In, Avatar as ur, Rating as Pn, Modal as Bn, Backdrop as On, Fade as Mn, Box as Nn, IconButton as Pt, CircularProgress as Ln } from "@mui/material";
+import { TextField as kn, Button as Tn, FormControl as An, Select as $n, MenuItem as In, FormControlLabel as Gr, Checkbox as En, Avatar as ur, Rating as Pn, Modal as Bn, Backdrop as On, Fade as Mn, Box as Nn, IconButton as Pt, CircularProgress as Ln } from "@mui/material";
 import ne from "moment";
 import { gql as fe, useMutation as ut, useQuery as Pe, InMemoryCache as Rn, ApolloClient as Dn, ApolloProvider as Fn } from "@apollo/client";
 import Ce from "clsx";
 import { usePlacesWidget as jn } from "react-google-autocomplete";
 import qn from "@emotion/styled";
 import { Global as Vn, ThemeContext as Wr } from "@emotion/react";
-function Ee(e, ...t) {
+function Ie(e, ...t) {
   const n = new URL(`https://mui.com/production-error/?code=${e}`);
   return t.forEach((o) => n.searchParams.append("args[]", o)), `Minified MUI error #${e}; visit ${n} for the full message.`;
 }
@@ -510,7 +510,7 @@ function mo(e, t) {
 }
 function Ge(e) {
   if (typeof e != "string")
-    throw new Error(Ee(7));
+    throw new Error(Ie(7));
   return e.charAt(0).toUpperCase() + e.slice(1);
 }
 function ft(e, t, n = !0) {
@@ -641,7 +641,7 @@ function ue(e, t) {
     transform: t
   });
 }
-const So = ue("border", ce), vo = ue("borderTop", ce), wo = ue("borderRight", ce), Co = ue("borderBottom", ce), xo = ue("borderLeft", ce), _o = ue("borderColor"), ko = ue("borderTopColor"), To = ue("borderRightColor"), Ao = ue("borderBottomColor"), $o = ue("borderLeftColor"), Eo = ue("outline", ce), Io = ue("outlineColor"), pt = (e) => {
+const So = ue("border", ce), vo = ue("borderTop", ce), wo = ue("borderRight", ce), Co = ue("borderBottom", ce), xo = ue("borderLeft", ce), _o = ue("borderColor"), ko = ue("borderTopColor"), To = ue("borderRightColor"), Ao = ue("borderBottomColor"), $o = ue("borderLeftColor"), Io = ue("outline", ce), Eo = ue("outlineColor"), pt = (e) => {
   if (e.borderRadius !== void 0 && e.borderRadius !== null) {
     const t = tt(e.theme, "shape.borderRadius", 4), n = (o) => ({
       borderRadius: rt(t, o)
@@ -652,7 +652,7 @@ const So = ue("border", ce), vo = ue("borderTop", ce), wo = ue("borderRight", ce
 };
 pt.propTypes = {};
 pt.filterProps = ["borderRadius"];
-ht(So, vo, wo, Co, xo, _o, ko, To, Ao, $o, pt, Eo, Io);
+ht(So, vo, wo, Co, xo, _o, ko, To, Ao, $o, pt, Io, Eo);
 const gt = (e) => {
   if (e.gap !== void 0 && e.gap !== null) {
     const t = tt(e.theme, "spacing", 8), n = (o) => ({
@@ -1143,8 +1143,8 @@ function Zo() {
   }
   return t;
 }
-const Ie = Zo();
-Ie.filterProps = ["sx"];
+const Ee = Zo();
+Ee.filterProps = ["sx"];
 function Jo(e, t) {
   var o;
   const n = this;
@@ -1185,7 +1185,7 @@ function Zr(e = {}, ...t) {
     ...St,
     ...s == null ? void 0 : s.unstable_sxConfig
   }, u.unstable_sx = function(p) {
-    return Ie({
+    return Ee({
       sx: p,
       theme: this
     });
@@ -1312,7 +1312,7 @@ function li(e = {}) {
     ai(l, t, n);
   }
   return (l, d = {}) => {
-    Xn(l, (A) => A.filter((B) => B !== Ie));
+    Xn(l, (A) => A.filter((B) => B !== Ee));
     const {
       name: u,
       slot: g,
@@ -1333,7 +1333,7 @@ function li(e = {}) {
       shouldForwardProp: T,
       label: ci(),
       ...y
-    }), E = (A) => {
+    }), I = (A) => {
       if (typeof A == "function" && A.__emotion_real !== A)
         return function(O) {
           return lt(O, A);
@@ -1346,7 +1346,7 @@ function li(e = {}) {
       }
       return A;
     }, x = (...A) => {
-      const B = [], O = A.map(E), _ = [];
+      const B = [], O = A.map(I), _ = [];
       if (B.push(i), u && S && _.push(function(v) {
         var N, Y;
         const $ = (Y = (N = v.theme.components) == null ? void 0 : N[u]) == null ? void 0 : Y.styleOverrides;
@@ -1358,12 +1358,12 @@ function li(e = {}) {
         return S(v, D);
       }), u && !m && _.push(function(v) {
         var D, N;
-        const I = v.theme, $ = (N = (D = I == null ? void 0 : I.components) == null ? void 0 : D[u]) == null ? void 0 : N.variants;
+        const E = v.theme, $ = (N = (D = E == null ? void 0 : E.components) == null ? void 0 : D[u]) == null ? void 0 : N.variants;
         return $ ? en(v, $) : null;
-      }), k || _.push(Ie), Array.isArray(O[0])) {
-        const b = O.shift(), v = new Array(B.length).fill(""), I = new Array(_.length).fill("");
+      }), k || _.push(Ee), Array.isArray(O[0])) {
+        const b = O.shift(), v = new Array(B.length).fill(""), E = new Array(_.length).fill("");
         let $;
-        $ = [...v, ...b, ...I], $.raw = [...v, ...b.raw, ...I], B.unshift($);
+        $ = [...v, ...b, ...E], $.raw = [...v, ...b.raw, ...E], B.unshift($);
       }
       const C = [...B, ...O, ..._], a = R(...C);
       return l.muiName && (a.muiName = l.muiName), a;
@@ -1440,11 +1440,11 @@ function Ae(e) {
     return Ae(pi(e));
   const t = e.indexOf("("), n = e.substring(0, t);
   if (!["rgb", "rgba", "hsl", "hsla", "color"].includes(n))
-    throw new Error(Ee(9, e));
+    throw new Error(Ie(9, e));
   let o = e.substring(t + 1, e.length - 1), r;
   if (n === "color") {
     if (o = o.split(" "), r = o.shift(), o.length === 4 && o[3].charAt(0) === "/" && (o[3] = o[3].slice(1)), !["srgb", "display-p3", "a98-rgb", "prophoto-rgb", "rec-2020"].includes(r))
-      throw new Error(Ee(10, r));
+      throw new Error(Ie(10, r));
   } else
     o = o.split(",");
   return o = o.map((i) => parseFloat(i)), {
@@ -1617,7 +1617,7 @@ function $i(e) {
   const r = t.components[n];
   return r.defaultProps ? Bt(r.defaultProps, o) : !r.styleOverrides && !r.variants ? Bt(r, o) : o;
 }
-function Ei({
+function Ii({
   props: e,
   name: t
 }) {
@@ -1673,7 +1673,7 @@ function on(e) {
 const _r = {
   theme: void 0
 };
-function Ii(e) {
+function Ei(e) {
   let t, n;
   return function(r) {
     let i = t;
@@ -1827,7 +1827,7 @@ function Li(e) {
   P.useEffect(() => {
     R(!0);
   }, []);
-  const E = Ni(m), x = P.useCallback((_) => {
+  const I = Ni(m), x = P.useCallback((_) => {
     k((C) => {
       if (_ === C.mode)
         return C;
@@ -1893,7 +1893,7 @@ function Li(e) {
     ...m,
     mode: T ? m.mode : void 0,
     systemMode: T ? m.systemMode : void 0,
-    colorScheme: T ? E : void 0,
+    colorScheme: T ? I : void 0,
     setMode: x,
     setColorScheme: A
   };
@@ -1930,7 +1930,7 @@ function Di(e) {
     var sr, ar, lr, cr;
     const {
       children: R,
-      theme: E,
+      theme: I,
       modeStorageKey: x = o,
       colorSchemeStorageKey: A = r,
       disableTransitionOnChange: B = i,
@@ -1940,13 +1940,13 @@ function Di(e) {
       colorSchemeNode: a = typeof document > "u" ? void 0 : document.documentElement,
       disableNestedContext: b = !1,
       disableStyleSheetGeneration: v = !1,
-      defaultMode: I = "system",
+      defaultMode: E = "system",
       noSsr: $
-    } = T, D = P.useRef(!1), N = Kt(), Y = P.useContext(u), J = !!Y && !b, oe = P.useMemo(() => E || (typeof n == "function" ? n() : n), [E]), X = oe[t], V = X || oe, {
+    } = T, D = P.useRef(!1), N = Kt(), Y = P.useContext(u), J = !!Y && !b, oe = P.useMemo(() => I || (typeof n == "function" ? n() : n), [I]), X = oe[t], V = X || oe, {
       colorSchemes: K = p,
       components: Z = h,
       cssVarPrefix: ee
-    } = V, _e = Object.keys(K).filter((te) => !!K[te]).join(","), F = P.useMemo(() => _e.split(","), [_e]), he = typeof s == "string" ? s : s.light, pe = typeof s == "string" ? s : s.dark, M = K[he] && K[pe] ? I : ((ar = (sr = K[V.defaultColorScheme]) == null ? void 0 : sr.palette) == null ? void 0 : ar.mode) || ((lr = V.palette) == null ? void 0 : lr.mode), {
+    } = V, _e = Object.keys(K).filter((te) => !!K[te]).join(","), F = P.useMemo(() => _e.split(","), [_e]), he = typeof s == "string" ? s : s.light, pe = typeof s == "string" ? s : s.dark, M = K[he] && K[pe] ? E : ((ar = (sr = K[V.defaultColorScheme]) == null ? void 0 : sr.palette) == null ? void 0 : ar.mode) || ((lr = V.palette) == null ? void 0 : lr.mode), {
       mode: Oe,
       setMode: ke,
       systemMode: We,
@@ -2122,59 +2122,59 @@ function Vi(e, t = {}) {
     [l]: y,
     ...m
   } = i;
-  if (Object.entries(m || {}).forEach(([E, x]) => {
+  if (Object.entries(m || {}).forEach(([I, x]) => {
     const {
       vars: A,
       css: B,
       varsWithDefaults: O
     } = Tt(x, t);
-    h = ae(h, O), S[E] = {
+    h = ae(h, O), S[I] = {
       css: B,
       vars: A
     };
   }), y) {
     const {
-      css: E,
+      css: I,
       vars: x,
       varsWithDefaults: A
     } = Tt(y, t);
     h = ae(h, A), S[l] = {
-      css: E,
+      css: I,
       vars: x
     };
   }
-  function k(E, x) {
+  function k(I, x) {
     var B, O;
     let A = r;
-    if (r === "class" && (A = ".%s"), r === "data" && (A = "[data-%s]"), r != null && r.startsWith("data-") && !r.includes("%s") && (A = `[${r}="%s"]`), E) {
+    if (r === "class" && (A = ".%s"), r === "data" && (A = "[data-%s]"), r != null && r.startsWith("data-") && !r.includes("%s") && (A = `[${r}="%s"]`), I) {
       if (A === "media")
-        return e.defaultColorScheme === E ? ":root" : {
-          [`@media (prefers-color-scheme: ${((O = (B = i[E]) == null ? void 0 : B.palette) == null ? void 0 : O.mode) || E})`]: {
+        return e.defaultColorScheme === I ? ":root" : {
+          [`@media (prefers-color-scheme: ${((O = (B = i[I]) == null ? void 0 : B.palette) == null ? void 0 : O.mode) || I})`]: {
             ":root": x
           }
         };
       if (A)
-        return e.defaultColorScheme === E ? `:root, ${A.replace("%s", String(E))}` : A.replace("%s", String(E));
+        return e.defaultColorScheme === I ? `:root, ${A.replace("%s", String(I))}` : A.replace("%s", String(I));
     }
     return ":root";
   }
   return {
     vars: h,
     generateThemeVars: () => {
-      let E = {
+      let I = {
         ...u
       };
       return Object.entries(S).forEach(([, {
         vars: x
       }]) => {
-        E = ae(E, x);
-      }), E;
+        I = ae(I, x);
+      }), I;
     },
     generateStyleSheets: () => {
       var _, C;
-      const E = [], x = e.defaultColorScheme || "light";
+      const I = [], x = e.defaultColorScheme || "light";
       function A(a, b) {
-        Object.keys(b).length && E.push(typeof a == "string" ? {
+        Object.keys(b).length && I.push(typeof a == "string" ? {
           [a]: {
             ...b
           }
@@ -2204,16 +2204,16 @@ function Vi(e, t = {}) {
         css: b
       }]) => {
         var $, D;
-        const v = (D = ($ = i[a]) == null ? void 0 : $.palette) == null ? void 0 : D.mode, I = !o && v ? {
+        const v = (D = ($ = i[a]) == null ? void 0 : $.palette) == null ? void 0 : D.mode, E = !o && v ? {
           colorScheme: v,
           ...b
         } : {
           ...b
         };
         A(n(a, {
-          ...I
-        }), I);
-      }), E;
+          ...E
+        }), E);
+      }), I;
     }
   };
 }
@@ -2435,15 +2435,15 @@ function Jt(e) {
     name: k,
     mainShade: T = 500,
     lightShade: R = 300,
-    darkShade: E = 700
+    darkShade: I = 700
   }) => {
     if (m = {
       ...m
     }, !m.main && m[T] && (m.main = m[T]), !m.hasOwnProperty("main"))
-      throw new Error(Ee(11, k ? ` (${k})` : "", T));
+      throw new Error(Ie(11, k ? ` (${k})` : "", T));
     if (typeof m.main != "string")
-      throw new Error(Ee(12, k ? ` (${k})` : "", JSON.stringify(m.main)));
-    return $r(m, "light", R, o), $r(m, "dark", E, o), m.contrastText || (m.contrastText = p(m.main)), m;
+      throw new Error(Ie(12, k ? ` (${k})` : "", JSON.stringify(m.main)));
+    return $r(m, "light", R, o), $r(m, "dark", I, o), m.contrastText || (m.contrastText = p(m.main)), m;
   };
   let S;
   return t === "light" ? S = an() : t === "dark" && (S = ln()), ae({
@@ -2530,12 +2530,12 @@ function Xi(e, t) {
 function es(e) {
   return Math.round(e * 1e5) / 1e5;
 }
-const Er = {
+const Ir = {
   textTransform: "uppercase"
-}, Ir = '"Roboto", "Helvetica", "Arial", sans-serif';
+}, Er = '"Roboto", "Helvetica", "Arial", sans-serif';
 function cn(e, t) {
   const {
-    fontFamily: n = Ir,
+    fontFamily: n = Er,
     // The default font size of the Material Specification.
     fontSize: o = 14,
     // px
@@ -2550,7 +2550,7 @@ function cn(e, t) {
     allVariants: u,
     pxToRem: g,
     ...p
-  } = typeof t == "function" ? t(e) : t, h = o / 14, S = g || ((k) => `${k / d * h}rem`), y = (k, T, R, E, x) => ({
+  } = typeof t == "function" ? t(e) : t, h = o / 14, S = g || ((k) => `${k / d * h}rem`), y = (k, T, R, I, x) => ({
     fontFamily: n,
     fontWeight: k,
     fontSize: S(T),
@@ -2558,8 +2558,8 @@ function cn(e, t) {
     lineHeight: R,
     // The letter spacing was designed for the Roboto font-family. Using the same letter-spacing
     // across font-families can cause issues with the kerning.
-    ...n === Ir ? {
-      letterSpacing: `${es(E / T)}em`
+    ...n === Er ? {
+      letterSpacing: `${es(I / T)}em`
     } : {},
     ...x,
     ...u
@@ -2574,9 +2574,9 @@ function cn(e, t) {
     subtitle2: y(s, 14, 1.57, 0.1),
     body1: y(i, 16, 1.5, 0.15),
     body2: y(i, 14, 1.43, 0.15),
-    button: y(s, 14, 1.75, 0.4, Er),
+    button: y(s, 14, 1.75, 0.4, Ir),
     caption: y(i, 12, 1.66, 0.4),
-    overline: y(i, 12, 2.66, 1, Er),
+    overline: y(i, 12, 2.66, 1, Ir),
     // TODO v6: Remove handling of 'inherit' variant from the theme as it is already handled in Material UI's Typography component. Also, remember to remove the associated types.
     inherit: {
       fontFamily: "inherit",
@@ -2710,7 +2710,7 @@ function Mt(e = {}, ...t) {
   if (e.vars && // The error should throw only for the root theme creation because user is not allowed to use a custom node `vars`.
   // `generateThemeVars` is the closest identifier for checking that the `options` is a result of `createTheme` with CSS variables so that user can create new theme for nested ThemeProvider.
   e.generateThemeVars === void 0)
-    throw new Error(Ee(20));
+    throw new Error(Ie(20));
   const g = Jt(i), p = Zr(e);
   let h = ae(p, {
     mixins: Xi(p.breakpoints, o),
@@ -2727,7 +2727,7 @@ function Mt(e = {}, ...t) {
     ...St,
     ...u == null ? void 0 : u.unstable_sxConfig
   }, h.unstable_sx = function(y) {
-    return Ie({
+    return Ee({
       sx: y,
       theme: this
     });
@@ -2896,26 +2896,26 @@ function vs(e = {}, ...t) {
   };
   let R = S;
   if ((p === "dark" && !("dark" in n) || p === "light" && !("light" in n)) && (R = !0), !R)
-    throw new Error(Ee(21, p));
-  const E = At(T, R, u, p);
+    throw new Error(Ie(21, p));
+  const I = At(T, R, u, p);
   y && !T.light && At(T, y, void 0, "light"), m && !T.dark && At(T, m, void 0, "dark");
   let x = {
     defaultColorScheme: p,
-    ...E,
+    ...I,
     cssVarPrefix: i,
     colorSchemeSelector: l,
     rootSelector: d,
     getCssVar: h,
     colorSchemes: T,
     font: {
-      ...Ji(E.typography),
-      ...E.font
+      ...Ji(I.typography),
+      ...I.font
     },
     spacing: bs(u.spacing)
   };
   Object.keys(x.colorSchemes).forEach((C) => {
     const a = x.colorSchemes[C].palette, b = (v) => {
-      const I = v.split("-"), $ = I[1], D = I[2];
+      const E = v.split("-"), $ = E[1], D = E[2];
       return h(v, a[$][D]);
     };
     if (a.mode === "light" && (f(a.common, "background", "#fff"), f(a.common, "onBackground", "#000")), a.mode === "dark" && (f(a.common, "background", "#000"), f(a.common, "onBackground", "#fff")), ys(a, ["Alert", "AppBar", "Avatar", "Button", "Chip", "FilledInput", "LinearProgress", "Skeleton", "Slider", "SnackbarContent", "SpeedDialAction", "StepConnector", "StepContent", "Switch", "TableCell", "Tooltip"]), a.mode === "light") {
@@ -2929,8 +2929,8 @@ function vs(e = {}, ...t) {
       f(a.SnackbarContent, "bg", v), f(a.SnackbarContent, "color", ge(() => a.getContrastText(v))), f(a.SpeedDialAction, "fabHoverBg", it(a.background.paper, 0.15)), f(a.StepConnector, "border", b("palette-grey-600")), f(a.StepContent, "border", b("palette-grey-600")), f(a.Switch, "defaultColor", b("palette-grey-300")), f(a.Switch, "defaultDisabledColor", b("palette-grey-600")), f(a.Switch, "primaryDisabledColor", j(a.primary.main, 0.55)), f(a.Switch, "secondaryDisabledColor", j(a.secondary.main, 0.55)), f(a.Switch, "errorDisabledColor", j(a.error.main, 0.55)), f(a.Switch, "infoDisabledColor", j(a.info.main, 0.55)), f(a.Switch, "successDisabledColor", j(a.success.main, 0.55)), f(a.Switch, "warningDisabledColor", j(a.warning.main, 0.55)), f(a.TableCell, "border", j(ot(a.divider, 1), 0.68)), f(a.Tooltip, "bg", ot(a.grey[700], 0.92));
     }
     Se(a.background, "default"), Se(a.background, "paper"), Se(a.common, "background"), Se(a.common, "onBackground"), Se(a, "divider"), Object.keys(a).forEach((v) => {
-      const I = a[v];
-      v !== "tonalOffset" && I && typeof I == "object" && (I.main && f(a[v], "mainChannel", Qe(Ze(I.main))), I.light && f(a[v], "lightChannel", Qe(Ze(I.light))), I.dark && f(a[v], "darkChannel", Qe(Ze(I.dark))), I.contrastText && f(a[v], "contrastTextChannel", Qe(Ze(I.contrastText))), v === "text" && (Se(a[v], "primary"), Se(a[v], "secondary")), v === "action" && (I.active && Se(a[v], "active"), I.selected && Se(a[v], "selected")));
+      const E = a[v];
+      v !== "tonalOffset" && E && typeof E == "object" && (E.main && f(a[v], "mainChannel", Qe(Ze(E.main))), E.light && f(a[v], "lightChannel", Qe(Ze(E.light))), E.dark && f(a[v], "darkChannel", Qe(Ze(E.dark))), E.contrastText && f(a[v], "contrastTextChannel", Qe(Ze(E.contrastText))), v === "text" && (Se(a[v], "primary"), Se(a[v], "secondary")), v === "action" && (E.active && Se(a[v], "active"), E.selected && Se(a[v], "selected")));
     });
   }), x = t.reduce((C, a) => ae(C, a), x);
   const A = {
@@ -2951,7 +2951,7 @@ function vs(e = {}, ...t) {
     ...St,
     ...u == null ? void 0 : u.unstable_sxConfig
   }, x.unstable_sx = function(a) {
-    return Ie({
+    return Ee({
       sx: a,
       theme: this
     });
@@ -3056,7 +3056,7 @@ const st = {
       typography: cn(e.palette, e.typography)
     };
     return t.unstable_sx = function(o) {
-      return Ie({
+      return Ee({
         sx: o,
         theme: this
       });
@@ -3190,7 +3190,7 @@ const $s = {
     maxLength: 2
   },
   ss: "seconds"
-}, Es = {
+}, Is = {
   year: "YYYY",
   month: "MMMM",
   monthShort: "MMM",
@@ -3216,7 +3216,7 @@ const $s = {
   keyboardDateTime24h: "L HH:mm"
 }, Or = ["Missing timezone plugin", "To be able to use timezones, you have to pass the default export from `moment-timezone` to the `dateLibInstance` prop of `LocalizationProvider`", "Find more information on https://mui.com/x/react-date-pickers/timezone/#moment-and-timezone"].join(`
 `);
-class Is {
+class Es {
   constructor({
     locale: t,
     formats: n,
@@ -3284,7 +3284,7 @@ class Is {
         d = this.addDays(d, 1), u = d.get("dayOfYear"), h === u && (d = d.add(12, "h").startOf("day")), l += 1;
       }
       return g;
-    }, this.getWeekNumber = (r) => r.week(), this.getDayOfWeek = (r) => r.day() + 1, this.moment = o || ne, this.locale = t, this.formats = Nt({}, Es, n);
+    }, this.getWeekNumber = (r) => r.week(), this.getDayOfWeek = (r) => r.day() + 1, this.moment = o || ne, this.locale = t, this.formats = Nt({}, Is, n);
   }
   getYearRange([t, n]) {
     const o = this.startOfYear(t), r = this.endOfYear(n), i = [];
@@ -3740,13 +3740,13 @@ const fn = Cn(
     setAuth: g,
     clearAuth: p,
     user: h
-  } = nt(), S = jt(null), [y, m] = z(!1), [k, T] = z(!1), [R, E] = z(!1), [x, A] = z(!1), { addCustomer: B } = Vs(), { isCustomerEmailExists: O } = Gs(), {
+  } = nt(), S = jt(null), [y, m] = z(!1), [k, T] = z(!1), [R, I] = z(!1), [x, A] = z(!1), { addCustomer: B } = Vs(), { isCustomerEmailExists: O } = Gs(), {
     setFieldValue: _,
     values: C,
     handleSubmit: a,
     handleChange: b,
     handleBlur: v,
-    errors: I,
+    errors: E,
     touched: $,
     isValid: D,
     dirty: N,
@@ -3774,7 +3774,7 @@ const fn = Cn(
           referred_by: h._id
         }), ee = Z == null ? void 0 : Z.addCustomer;
         if (!ee) return;
-        l(ee), g({ isAuthenticated: !0, jwt: "" }), A(!1), E(!0);
+        l(ee), g({ isAuthenticated: !0, jwt: "" }), A(!1), I(!0);
       } catch (V) {
         console.error(V);
       } finally {
@@ -3785,7 +3785,7 @@ const fn = Cn(
   de(() => {
     if (k || R) {
       const X = setTimeout(() => {
-        T(!1), E(!1), i == null || i();
+        T(!1), I(!1), i == null || i();
       }, 1500);
       return () => clearTimeout(X);
     }
@@ -3832,11 +3832,11 @@ const fn = Cn(
             label: "Customer email",
             name: "email",
             value: C.email,
-            error: $.email && !!I.email,
+            error: $.email && !!E.email,
             ...J
           }
         ),
-        $.email && I.email && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: I.email })
+        $.email && E.email && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: E.email })
       ] }),
       /* @__PURE__ */ w("div", { className: "flex justify-end", children: [
         /* @__PURE__ */ c(
@@ -3893,11 +3893,11 @@ const fn = Cn(
             label: "Customer name",
             name: "name",
             value: C.name,
-            error: $.name && !!I.name,
+            error: $.name && !!E.name,
             ...J
           }
         ),
-        $.name && I.name && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: I.name })
+        $.name && E.name && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: E.name })
       ] }),
       /* @__PURE__ */ w("div", { className: "w-full flex  flex-col justify-between mt-2", children: [
         /* @__PURE__ */ c(
@@ -3906,11 +3906,11 @@ const fn = Cn(
             label: "Customer phone number",
             name: "phone_number",
             value: C.phone_number,
-            error: $.phone_number && !!I.phone_number,
+            error: $.phone_number && !!E.phone_number,
             ...J
           }
         ),
-        $.phone_number && I.phone_number && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: I.phone_number })
+        $.phone_number && E.phone_number && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: E.phone_number })
       ] }),
       /* @__PURE__ */ w("div", { className: "w-full flex justify-center flex-col items-center mt-5", children: [
         /* @__PURE__ */ c(
@@ -3989,7 +3989,7 @@ const fn = Cn(
     }
   });
   return t;
-}, Et = ({
+}, It = ({
   name: e,
   value: t,
   onChange: n,
@@ -4028,7 +4028,7 @@ const fn = Cn(
         value: t,
         required: r,
         onChange: n,
-        children: o.map((u) => /* @__PURE__ */ c(En, { value: u.value, children: u.label }, u.value))
+        children: o.map((u) => /* @__PURE__ */ c(In, { value: u.value, children: u.label }, u.value))
       }
     )
   }
@@ -4109,7 +4109,7 @@ const fn = Cn(
 ] }), qr = ({ isChecked: e, onClick: t, label: n }) => /* @__PURE__ */ c(
   Gr,
   {
-    control: /* @__PURE__ */ c(In, { checked: e, onClick: t }),
+    control: /* @__PURE__ */ c(En, { checked: e, onClick: t }),
     label: n,
     className: "text-[var(--prebooked-font-color)]"
   }
@@ -4214,10 +4214,10 @@ const fn = Cn(
   var Z, ee, _e, F, he, pe;
   const [u, g] = z(
     "round_trip"
-  ), [p, h] = z(""), [S, y] = z(""), [m, k] = z(!1), [T, R] = z(!1), [E, x] = z(!0), [A, B] = z(!1), { customer: O, setEnquiry: _ } = nt(), { addBpenquiry: C, error: a } = Qs(), {
+  ), [p, h] = z(""), [S, y] = z(""), [m, k] = z(!1), [T, R] = z(!1), [I, x] = z(!0), [A, B] = z(!1), { customer: O, setEnquiry: _ } = nt(), { addBpenquiry: C, error: a } = Qs(), {
     setFieldValue: b,
     values: v,
-    handleSubmit: I,
+    handleSubmit: E,
     handleChange: $,
     handleBlur: D,
     errors: N,
@@ -4299,7 +4299,7 @@ const fn = Cn(
     /* @__PURE__ */ c(
       ze,
       {
-        show: E,
+        show: I,
         colorVar: JSON.stringify(a == null ? void 0 : a.message) ? "--prebooked-warning-color" : "--prebooked-gray-color",
         message: JSON.stringify(a == null ? void 0 : a.message) || o
       }
@@ -4312,7 +4312,7 @@ const fn = Cn(
         message: "A return time is required for round trip bookings"
       }
     ),
-    /* @__PURE__ */ w("form", { onSubmit: I, children: [
+    /* @__PURE__ */ w("form", { onSubmit: E, children: [
       /* @__PURE__ */ w("div", { className: "", children: [
         /* @__PURE__ */ c(
           qr,
@@ -4427,7 +4427,7 @@ const fn = Cn(
           }
         ),
         /* @__PURE__ */ c(
-          Et,
+          It,
           {
             name: "travelling_reason",
             value: v.travelling_reason,
@@ -4443,7 +4443,7 @@ const fn = Cn(
       ] }),
       Y.passenger_count && N.passenger_count && /* @__PURE__ */ c("p", { className: "text-[var(--prebooked-warning-color)]", children: N.passenger_count }),
       /* @__PURE__ */ c("div", { className: "my-2.5 [&>*]:w-full", children: /* @__PURE__ */ c(
-        Et,
+        It,
         {
           name: "vehicle_type",
           value: v.vehicle_type,
@@ -4474,7 +4474,7 @@ const fn = Cn(
           }
         ),
         /* @__PURE__ */ c(
-          Et,
+          It,
           {
             name: "luggage_type",
             value: v.luggage_type,
@@ -4512,7 +4512,7 @@ const fn = Cn(
             variant: "contained",
             type: "submit",
             onSubmit: () => {
-              I();
+              E();
             }
           }
         )
@@ -4562,7 +4562,7 @@ const fn = Cn(
     },
     children: Ds(n || "User")
   }
-) }), It = ({ isPhotoVisible: e, avatarURI: t, contact_name: n, isOperator: o, children: r }) => /* @__PURE__ */ w(
+) }), Et = ({ isPhotoVisible: e, avatarURI: t, contact_name: n, isOperator: o, children: r }) => /* @__PURE__ */ w(
   we.div,
   {
     initial: { y: 10, opacity: 0 },
@@ -4611,9 +4611,9 @@ const fn = Cn(
   /* @__PURE__ */ c("br", {}),
   /* @__PURE__ */ c("hr", {}),
   /* @__PURE__ */ c("br", {})
-] }), ta = Ii;
+] }), ta = Ei;
 function ra(e) {
-  return Ei(e);
+  return Ii(e);
 }
 function na(e) {
   return Jr("MuiSvgIcon", e);
@@ -5314,9 +5314,9 @@ const Aa = fe`
       error: d ? d[0].message : null
     };
   }, data: n, error: o, loading: r };
-}, Ea = Be(/* @__PURE__ */ c("path", {
+}, Ia = Be(/* @__PURE__ */ c("path", {
   d: "M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"
-}), "Send"), Ia = ({ onSend: e, isSubmitting: t, secondaryColor: n }) => {
+}), "Send"), Ea = ({ onSend: e, isSubmitting: t, secondaryColor: n }) => {
   const [o, r] = z("");
   return /* @__PURE__ */ w("div", { className: "w-full flex flex-row items-center justify-center mb-2.5 px-2.5 md:w-9/10", children: [
     /* @__PURE__ */ c("div", { className: "w-4/5 pr-2 pt-2.5", children: /* @__PURE__ */ c(
@@ -5339,7 +5339,7 @@ const Aa = fe`
         disabled: !(o.trim().length >= 2),
         style: { color: "#fff", backgroundColor: n },
         children: t ? /* @__PURE__ */ c(Ln, { style: { color: "#fff" }, size: 24 }) : /* @__PURE__ */ c(
-          Ea,
+          Ia,
           {
             style: {
               marginLeft: 3,
@@ -5461,7 +5461,7 @@ const Aa = fe`
   var ee, _e;
   const { user: o, enquiry: r, setEnquiry: i } = nt(), [s, l] = z(!1), [d, u] = z(""), g = jt(null), [p, h] = z(!1), [S, y] = z(1), [m, k] = z(
     "64f8267c7ed1f6aa0166bde1"
-  ), [T, R] = z(o._id), E = wa(), { isFullScreen: x, toggleFullScreen: A, elementRef: B } = va(), {
+  ), [T, R] = z(o._id), I = wa(), { isFullScreen: x, toggleFullScreen: A, elementRef: B } = va(), {
     direction: O,
     handleOptionChange: _
   } = yn(
@@ -5480,7 +5480,7 @@ const Aa = fe`
     _id: T || "64f8267c7ed1f6aa0166bde1"
   }), {
     data: v,
-    loading: I
+    loading: E
   } = ka(Oa, {
     _id: r._id || "64f8267c7ed1f6aa0166bde1"
   }), {
@@ -5491,7 +5491,7 @@ const Aa = fe`
   }), { updateProposalOnBpenquiry: N } = $a(), Y = $ == null ? void 0 : $.proposed_by, J = $ == null ? void 0 : $.proposed_bpenquiry_ref, oe = ($ == null ? void 0 : $.conversations) || [], X = (C == null ? void 0 : C.status) === "offer_accepted", V = !X && ne((ee = C == null ? void 0 : C.trip_info) == null ? void 0 : ee.pickup_datetime).isAfter(), K = X && (Y == null ? void 0 : Y._id.toString()) === ((_e = J == null ? void 0 : J.company_ref) == null ? void 0 : _e._id.toString());
   de(() => {
     v && v.length > 0 && (k(v[0]._id), R(v[0].proposed_by._id), D(), b());
-  }, [I]), de(() => {
+  }, [E]), de(() => {
     var F;
     (F = g.current) == null || F.scrollIntoView({
       behavior: "smooth",
@@ -5513,7 +5513,7 @@ const Aa = fe`
     {
       ref: B,
       isFullScreen: x,
-      keyboardHeight: E,
+      keyboardHeight: I,
       title: "List of Previous Enquiries",
       actionTitle: "Load More",
       actionClick: () => {
@@ -5541,7 +5541,7 @@ const Aa = fe`
     {
       ref: B,
       isFullScreen: x,
-      keyboardHeight: E,
+      keyboardHeight: I,
       title: `You are talking to ${er(o.contact_name)}`,
       actionTitle: s ? "Please wait..." : "Request Booking Confirmation",
       isActionDisabled: s || K || !V,
@@ -5574,7 +5574,7 @@ const Aa = fe`
                 const pe = he === Z;
                 return /* @__PURE__ */ w(Ft.Fragment, { children: [
                   pe && a && /* @__PURE__ */ c(
-                    It,
+                    Et,
                     {
                       isPhotoVisible: o.isPhotoVisible,
                       avatarURI: `${Fe}/photos/avatars/${o.photo}`,
@@ -5590,7 +5590,7 @@ const Aa = fe`
                     }
                   ),
                   /* @__PURE__ */ w(
-                    It,
+                    Et,
                     {
                       isPhotoVisible: o.isPhotoVisible,
                       avatarURI: `${Fe}/photos/avatars/${o.photo}`,
@@ -5609,7 +5609,7 @@ const Aa = fe`
                     }
                   ),
                   pe && ($ == null ? void 0 : $.selected_vehicle) && /* @__PURE__ */ c(
-                    It,
+                    Et,
                     {
                       isPhotoVisible: o.isPhotoVisible,
                       avatarURI: `${Fe}/photos/avatars/${o.photo}`,
@@ -5631,7 +5631,7 @@ const Aa = fe`
           }
         ),
         /* @__PURE__ */ c(
-          Ia,
+          Ea,
           {
             secondaryColor: n,
             isSubmitting: s,
@@ -5718,8 +5718,19 @@ const Da = fe`
   return de(() => {
     m && p(m);
   }, [m]), T ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ c("p", { className: "font-[var(--prebooked-font-name)]", children: "Setting up the Prebooked Widget. Please hold on a moment..." }) }) }) : k ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ w("p", { className: "font-[var(--prebooked-font-name)]", children: [
-    "Oops! Something went wrong while loading the Prebooked Widget. Error details: ",
-    JSON.stringify(k)
+    /* @__PURE__ */ c("strong", { children: "Oops!" }),
+    " You must configure the plugin using the user ID provided by the ",
+    /* @__PURE__ */ c("strong", { children: "Fully Booked" }),
+    " mobile app.",
+    /* @__PURE__ */ c("br", {}),
+    "If you don’t have it, please contact ",
+    /* @__PURE__ */ c("strong", { children: "admin support" }),
+    " ",
+    "through the app.",
+    /* @__PURE__ */ c("br", {}),
+    "If this error is unrelated to the user ID, please make sure with admin support that the domain (",
+    window.location.origin,
+    ") has been granted access to the widget on the server side."
   ] }) }) }) : m ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ w("div", { className: "w-[97%] flex flex-col radius-10 pt-3", children: [
     /* @__PURE__ */ c(
       Hs,
@@ -5801,7 +5812,7 @@ const Da = fe`
   fontName: k = "DM_Sans",
   inputPadding: T = "8.5px 10px",
   messengerEnquiryItemWidth: R = "340px",
-  messengerDesktopHeight: E = "750px",
+  messengerDesktopHeight: I = "750px",
   messengerMobileHeight: x = "800x",
   messengerConversationHeight: A = "600px",
   scrollbarWidth: B = "3px",
@@ -5855,7 +5866,7 @@ const Da = fe`
     "prebooked-font-name": k,
     "prebooked-input-padding": T,
     "prebooked-messender-enquiry-item-width": R,
-    "prebooked-messender-desktop-height": E,
+    "prebooked-messender-desktop-height": I,
     "prebooked-messender-mobile-height": x,
     "prebooked-messender-conversation-height": A,
     "prebooked-scrollbar-width": B,
@@ -5864,7 +5875,7 @@ const Da = fe`
     "prebooked-scrollbar-thumb-color": C,
     "prebooked-scrollbar-thumb-hover-color": a,
     "prebooked-scrollbar-border-radius": b
-  }), /* @__PURE__ */ c(Fn, { client: Va, children: /* @__PURE__ */ c(As, { theme: v, children: /* @__PURE__ */ c(wn, { dateAdapter: Is, children: /* @__PURE__ */ c(js, { children: /* @__PURE__ */ c(
+  }), /* @__PURE__ */ c(Fn, { client: Va, children: /* @__PURE__ */ c(As, { theme: v, children: /* @__PURE__ */ c(wn, { dateAdapter: Es, children: /* @__PURE__ */ c(js, { children: /* @__PURE__ */ c(
     Fa,
     {
       user_id: e,
