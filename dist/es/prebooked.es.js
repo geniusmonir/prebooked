@@ -5717,7 +5717,7 @@ const Da = fe`
   });
   return de(() => {
     m && p(m);
-  }, [m]), T ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ c("p", { className: "font-[var(--prebooked-font-name)]", children: "Setting up the Prebooked Widget. Please hold on a moment..." }) }) }) : k ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ w("p", { className: "font-[var(--prebooked-font-name)]", children: [
+  }, [m]), T ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ c("p", { className: "font-[var(--prebooked-font-name)] text-center", children: "Setting up the Prebooked Widget. Please hold on a moment..." }) }) }) : k ? /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ w("p", { className: "font-[var(--prebooked-font-name)] text-center", children: [
     /* @__PURE__ */ c("strong", { children: "Oops!" }),
     " You must configure the plugin using the user ID provided by the ",
     /* @__PURE__ */ c("strong", { children: "Fully Booked" }),
@@ -5776,7 +5776,7 @@ const Da = fe`
         }
       )
     ] })
-  ] }) }) : /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ c("p", { className: "font-[var(--prebooked-font-name)]", children: "We couldn't find a user with the provided User ID. Please make sure the User ID in your configuration is correct, or contact support for assistance." }) }) });
+  ] }) }) : /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center bg-[var(--prebooked-globalbg-color)]", children: /* @__PURE__ */ c("div", { className: "w-full flex justify-center items-center mt-4", children: /* @__PURE__ */ c("p", { className: "font-[var(--prebooked-font-name)] text-center", children: "We couldn't find a user with the provided User ID. Please make sure the User ID in your configuration is correct, or contact support for assistance." }) }) });
 }, ja = (e) => {
   de(() => {
     Object.entries(e).forEach(([t, n]) => {
