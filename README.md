@@ -51,7 +51,7 @@ npm install prebooked
 yarn add prebooked
 ```
 
-This is just one line import for the plugin and you are ready to use that as your Booking Form Component.
+> **Note:** With just a single import, you're ready to use the Booking Form Component. The widget takes up the full width and height of its wrapper `<div>`, so adjust the wrapper's dimensions to see the best design layout.
 
 ```tsx
 import { Prebooked } from 'prebooked';
@@ -160,7 +160,7 @@ Here are the steps needs to make Prebooked works on your WordPress or Elementor 
 ```html
 <div id="prebooked_widget"></div>
 
-<script src="https://unpkg.com/prebooked@1.0.4/dist/umd/prebooked.umd.js
+<script src="https://unpkg.com/prebooked@1.0.6/dist/umd/prebooked.umd.js
 "></script>
 <script>
   Prebooked.renderWidget('prebooked_widget', {
@@ -171,7 +171,7 @@ Here are the steps needs to make Prebooked works on your WordPress or Elementor 
 
 Please visit the [npm](https://www.npmjs.com/package/prebooked) package to see the latest version and update the `prebooked@version` code accordingly. If the currrent code is `1.5.0` then the umd bundle link will be, `https://unpkg.com/prebooked@1.5.0/dist/umd/prebooked.umd.js`. Make sure to use the latest version otherwise some features may not available.
 
-> **Note:** This booking form widget script includes all styles fonts and designs along with it. you just have to use the umd bundle and the div id along with the function. All the props available is given above. No need to add any additional css or fonts. If you change the font name make sure the new font is loaded on head tag of your html. Otherwise the font will not work.
+> **Note:** This booking form widget script includes all styles fonts and designs along with it. you just have to use the umd bundle and the div id along with the function. All the props available is given above. No need to add any additional css or fonts. If you change the font name make sure the new font is loaded on head tag of your html. Otherwise the font will not work. If you are using Google Maps API script for other purposes on your website already and see any issues installing widget with places auto complete please contact admin support. Before contacting admin support you just make sure your existing API key has the `Places API` feature enabled or not.
 
 ---
 
