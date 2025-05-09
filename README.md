@@ -10,6 +10,14 @@ Prebooked is the powerful new booking widget that connects your website directly
 
 With Prebooked, you can transform your website into a fully interactive sales and customer management tool — making it easier than ever to win more bookings and grow your business.
 
+## 👀 Have a quick look at how it works
+
+To see it live in action, [click here](https://fully-booked.uk/businesspage/prebookeddemo.com).
+
+<p align="center">
+  <img src="http://api.fully-booked.uk/assets/files/prebooked_demo.gif" alt="Prebooked Demo">
+</p>
+
 ## 📦 Installation: Prebooked Widget - Universally Supported
 
 The **Prebooked** widget is designed to work **everywhere** on the web!  
@@ -107,7 +115,7 @@ export interface PrebookedProps {
 | Menu Names                    | `menuNames`                   | `['Customer Info', 'Trip Details', 'Messenger']`                                                                                            |
 | Trip Instruction              | `tripInstruction`             | `You can view your previous booking history and chat with operator on Messenger Tab`                                                        |
 | Trip Note                     | `tripNote`                    | `Please use this section to add any additional requirements you may have. For Example, we need additional drop offs on the return journey.` |
-| Conversation Note             | `conversationNote`            | `Ensure to discuss all terms before confirming your booking`                                                                                |
+| Conversation Note             | `conversationNote`            | `To ensure timely responses and proper handling of your booking, kindly use this chat for all communication.`                               |
 | Font Name                     | `fontName`                    | `DM_Sans`                                                                                                                                   |
 | Input Padding                 | `inputPadding`                | `8.5px 10px`                                                                                                                                |
 | Messenger Enquiry Item Width  | `messengerEnquiryItemWidth`   | `340px`                                                                                                                                     |
@@ -160,7 +168,7 @@ Here are the steps needs to make Prebooked works on your WordPress or Elementor 
 ```html
 <div id="prebooked_widget"></div>
 
-<script src="https://unpkg.com/prebooked@1.0.7/dist/umd/prebooked.umd.js
+<script src="https://unpkg.com/prebooked@1.0.9/dist/umd/prebooked.umd.js
 "></script>
 <script>
   Prebooked.renderWidget('prebooked_widget', {
